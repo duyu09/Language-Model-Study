@@ -13,7 +13,7 @@
 @Copyright:
              Copyright (c) 2024 DuYu (No.202103180009), Faculty of Computer Science & Technology, Qilu University of Technology (Shandong Academy of Sciences).
 @Note     :
-             Last Modify: 2024/01/04 备注：数据集是第一列为文本语料的csv文件，若有txt文件需要转换或修改本代码。好的数据集来源参见Readme.md文档。
+             Last Modify: 2024/01/05 备注：数据集是第一列为文本语料的csv文件，若有txt文件需要转换或修改本代码。好的数据集来源参见Readme.md文档。
 """
 
 import csv
@@ -28,7 +28,7 @@ corpus = ["我喜欢吃苹果", "我喜欢吃香蕉", "我爱中国", "他喜欢
 
 # 定义分词函数，中文语句中，每个汉字就是一个词。
 
-def tokenzier(text):
+def tokenizer(text):
     # return text.split(" ")  # 英文以空格作为词语间的分隔符
     return [c for c in text]
 
@@ -39,7 +39,7 @@ def count_ngrams(corpus, n):
     arr = []
     result = defaultdict(dict)
     for text in corpus:
-        words = tokenzier(text)
+        words = tokenizer(text)
         for e in range(len(words) - n + 1):
             arr.append(tuple(words[e:e + n]))
     count_arr = Counter(arr)
@@ -102,7 +102,7 @@ def generate_text(probability_dict, first_word):  # 动态输出
         n_word = next_word(probability_dict, n_word)
 
 
-# 读取并处理数据集(文本存储在CSV文件的第一列中)
+# 读取并处理数据集(数据集格式：文本存储在CSV文件的第一列中)
 
 def load_dataset(filename):
     dataset = []
