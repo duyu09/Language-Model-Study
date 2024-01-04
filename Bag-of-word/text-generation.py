@@ -7,13 +7,13 @@
 @Author   :
              DuYu (@Duyu09, qluduyu09@163.com)
 @File     :
-             main.py
+             text-generation.py
 @Describe :
              自然语言处理 基于”词袋模型“的文本生成练手代码。Practicing code of text generation based on bag-of-word model of NLP.
 @Copyright:
              Copyright (c) 2024 DuYu (No.202103180009), Faculty of Computer Science & Technology, Qilu University of Technology (Shandong Academy of Sciences).
 @Note     :
-             Last Modify: 2024/01/05 备注：数据集是第一列为文本语料的csv文件，若有txt文件需要转换或修改本代码。好的数据集来源参见Readme.md文档。
+             Last Modify: 2024/01/05 备注：数据集是第一列为文本语料的csv文件；若有txt文件则需要转换，或修改本代码。好的数据集来源参见Readme.md文档。
 """
 
 import csv
