@@ -23,3 +23,8 @@
   - “词袋模型”是NLP中常用的一种文本表示方法。它将文本看作是一个“袋子”，忽略了文本中单词出现的顺序，只关注每个单词在文本中出现的频率或者存在的情况。在这个模型中，一个文本可以被表示为一个由单词构成的集合，每个单词都有一个对应的计数(或者布尔值)，表示它在文本中的出现情况。词袋模型常用于文本分类，情感分析、信息检索等场景。
  
   
+### 访问次数统计
+
+<div><b>Number of Total Visits (All of Duyu09's GitHub Projects): </b><br><img src="https://profile-counter.glitch.me/duyu09/count.svg" /></div> 
+
+<div><b>Number of Total Visits (NetDisk Project): </b><br><img src="https://profile-counter.glitch.me/duyu09-Language-Model-Study/count.svg" /></div> 
