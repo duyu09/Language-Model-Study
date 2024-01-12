@@ -30,7 +30,15 @@
   - Skip-Gram是一个用于词嵌入的模型，它是Word2Vec模型的一部分，它的目标是给定一个中心词，预测在该词的上下文窗口内可能出现的其他词。当神经网络的参数稳定下来时，Embedding层的参数就是词嵌入矩阵。
   - 词嵌入向量反映一个词语在高维空间中与其他词语间的关系，通常两个词的词向量越接近，两个词语的语义(或其他某些属性)就越相似。利用词向量可以完成分类、情感分析等非常多的NLP下游任务。
  
-  
+- Update on Jan. 12th, 2024
+
+  - 使用skip_gram.py中的代码，训练了一组样例词向量。包含3093词，每个向量64个维度。语料的主要来源包括莎士比亚的著作、BBC新闻以及一些公开的科学文献，确保语料在各个时间段与领域均有所涉及。
+
+    <img src="https://github.com/duyu09/Language-Model-Study/assets/92843163/dc4f5cf0-2f17-4b4d-9d8a-8f072a829e11" alt="Loss_values" style="width:34%;" />
+
+    <img src="https://github.com/duyu09/Language-Model-Study/assets/92843163/035d6aa9-a8f0-4ac1-89dd-ac26a4560f4f" alt="Test_values" style="width:34%;" />
+
+
 ### 访问次数统计
 
 <div><b>Number of Total Visits (All of Duyu09's GitHub Projects): </b><br><img src="https://profile-counter.glitch.me/duyu09/count.svg" /></div> 
